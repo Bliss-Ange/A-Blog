@@ -18,12 +18,14 @@ all my contact details are inside CV (I better not simply share my personal info
 Best,
 Angelyn
 (June 17, 2024)
-```
-----------------------------------------------------------------------
+
+
 
 Screen Recording link to see the system without npm run dev: https://drive.google.com/file/d/1rgi58rDltFK5uUA4cpkjzaACiQqWO6FJ/view?usp=sharing
 
+```
 
+----------------------------------------------------------------------
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
