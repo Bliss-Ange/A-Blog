@@ -1,6 +1,6 @@
 💬 Message from Angelyn
 
-Dear invigilator,
+Hello there,
 
 This project was developed using Next.js for the frontend, along with Material UI (MUI) for layout and components. Initially, I spent quite a bit of time exploring how routing works in Next.js (was too used to just creating files inside pages directly 😅). But I managed to organize and route everything properly in the end!
 
