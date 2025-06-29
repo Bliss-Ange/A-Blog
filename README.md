@@ -1,64 +1,81 @@
-
-Message from Angelyn:
+💬 Message from Angelyn
 Dear invigilator,
 
-I am using NextJs for the frontend development. 
-Spent a little bit more time on the routing haha! Was so used to only go to pages and create whatever new page I was assigned.
-After the frontend is run, please go to http://localhost:3000/auth/login2 for login page.
-You may click on the logo and the header name to go to the post page. Or directly with http://localhost:3000/posts
+This project was developed using Next.js for the frontend, along with Material UI (MUI) for layout and components. Initially, I spent quite a bit of time exploring how routing works in Next.js (was too used to just creating files inside pages directly 😅). But I managed to organize and route everything properly in the end!
 
-In order to make the pages to look clean, was using MUI component for the frontend development.
-Grid and Box are the two core tags that i used to make the posts with a better ui view
-Pagination to let the post page load only limited post list (if exceed 10, user could click to the next page to view more)
-icons to replace wordy button (for example: delete icon)
+🔐 Login page: /auth/login2
 
-please feel free to contact me if you have any questions regarding on my assessment.
-all my contact details are inside CV (I better not simply share my personal info in public git project ahhahaha><
+📰 Post list page: /posts
+
+🏠 You can also click the header logo/name to go to the post list.
+
+MUI's Grid and Box components were mainly used for a clean and responsive layout.
+Posts are paginated (10 per page), and I used icons to replace text buttons (like a trash bin for "Delete").
+
+Feel free to contact me if you have any questions—my contact info is in the CV!
+(Not sharing it in public GitHub la hahaha ><)
 
 Best,
 Angelyn
-(June 17, 2024)
 
+------------------------------------------------------------------------------------------
+🎥 👉 Click here for the screen recording demo -> https://drive.google.com/file/d/1rgi58rDltFK5uUA4cpkjzaACiQqWO6FJ/view
 
+------------------------------------------------------------------------------------------
+✅ Features Implemented
+🔐 Authentication & Authorization
+Simulated login/logout using hardcoded user credentials and app state.
 
-Screen Recording link to see the system without npm run dev: https://drive.google.com/file/d/1rgi58rDltFK5uUA4cpkjzaACiQqWO6FJ/view?usp=sharing
+Two user roles supported:
 
+Read-only User: Can view list of posts and comments.
 
+Admin User: Can view, edit, and delete posts and comments.
 
-----------------------------------------------------------------------
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🧭 Page Structure
+/auth/login2 – Login Page
 
-## Getting Started
+/posts – Post List Page with pagination
 
-First, run the development server:
+/posts/[id] – Post Details Page
 
-```bash
+🔄 Auth-Based UI Behavior
+Header dynamically shows Login or Logout button based on auth state.
+
+If logged in as Admin:
+
+Can edit post title directly on the post details page.
+
+Can delete posts from the post details page.
+
+Can delete individual comments below the post.
+
+🚫 No Backend Required
+No actual backend or API—everything is simulated.
+
+CRUD operations are handled via React state and/or localStorage to mimic API behavior.
+
+🧰 UI/UX Details
+Built using Material UI (MUI) for modern UI components.
+
+Used Icons instead of wordy buttons for actions like delete.
+
+Pagination for a better browsing experience on the post list page.
+
+🚀 Getting Started
+Development Setup
+bash
+Copy
+Edit
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🛠 Tech Stack
+Next.js – React framework for SSR & routing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Material UI (MUI) – UI component library
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Local Storage – Used to simulate backend persistence
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+React State Management – For auth and UI logic
