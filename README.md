@@ -28,9 +28,10 @@ Simulated login/logout using hardcoded user credentials and app state.
 
 Two user roles supported:
 
--Read-only User: Can view list of posts and comments.
+- Read-only User: Can view list of posts and comments.
 
--Admin User: Can view, edit, and delete posts and comments.
+- Admin User: Can view, edit, and delete posts and comments.
+------------------------------------------------------------------------------------------
 
 🧭 Page Structure
 /auth/login2 – Login Page
@@ -38,6 +39,8 @@ Two user roles supported:
 /posts – Post List Page with pagination
 
 /posts/[id] – Post Details Page
+
+------------------------------------------------------------------------------------------
 
 🔄 Auth-Based UI Behavior
 Header dynamically shows Login or Logout button based on auth state.
@@ -57,18 +60,16 @@ CRUD operations are handled via React state and/or localStorage to mimic API beh
 
 ------------------------------------------------------------------------------------------
 🧰 UI/UX Details
--Built using Material UI (MUI) for modern UI components.
+- Built using Material UI (MUI) for modern UI components.
 
--Used Icons instead of wordy buttons for actions like delete.
+- Used Icons instead of wordy buttons for actions like delete.
 
--Pagination for a better browsing experience on the post list page.
+- Pagination for a better browsing experience on the post list page.
 
 ------------------------------------------------------------------------------------------
 🚀 Getting Started
 Development Setup
 bash
-Copy
-Edit
 npm install
 npm run dev
 Open http://localhost:3000 in your browser.
