@@ -44,17 +44,18 @@ Header dynamically shows Login or Logout button based on auth state.
 
 If logged in as Admin:
 
--Can edit post title directly on the post details page.
+- Can edit post title directly on the post details page.
 
--Can delete posts from the post details page.
+- Can delete posts from the post details page.
 
--Can delete individual comments below the post.
+- Can delete individual comments below the post.
 
 🚫 No Backend Required
 No actual backend or API—everything is simulated.
 
 CRUD operations are handled via React state and/or localStorage to mimic API behavior.
 
+------------------------------------------------------------------------------------------
 🧰 UI/UX Details
 -Built using Material UI (MUI) for modern UI components.
 
@@ -62,6 +63,7 @@ CRUD operations are handled via React state and/or localStorage to mimic API beh
 
 -Pagination for a better browsing experience on the post list page.
 
+------------------------------------------------------------------------------------------
 🚀 Getting Started
 Development Setup
 bash
@@ -71,6 +73,7 @@ npm install
 npm run dev
 Open http://localhost:3000 in your browser.
 
+------------------------------------------------------------------------------------------
 🛠 Tech Stack
 Next.js – React framework for SSR & routing
 
